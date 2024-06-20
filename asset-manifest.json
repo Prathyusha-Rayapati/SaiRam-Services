@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SaiRam-Services/static/css/main.0e87671f.css",
+    "main.js": "/SaiRam-Services/static/js/main.592ac18f.js",
+    "static/js/453.eca340d7.chunk.js": "/SaiRam-Services/static/js/453.eca340d7.chunk.js",
+    "static/media/commercial_pest_control.jpg": "/SaiRam-Services/static/media/commercial_pest_control.236cc6e5aab924fb6e15.jpg",
+    "static/media/termite_control.jpg": "/SaiRam-Services/static/media/termite_control.7c8587390e774d899d4f.jpg",
+    "static/media/person_pesticiding.jpg": "/SaiRam-Services/static/media/person_pesticiding.7465b33cb11c19f062b6.jpg",
+    "static/media/logo.jpg": "/SaiRam-Services/static/media/logo.1be4635124c1895c28d5.jpg",
+    "static/media/rodent_control.jpg": "/SaiRam-Services/static/media/rodent_control.6b869e08e7b29ffb1547.jpg",
+    "static/media/bed_bug_control.jpg": "/SaiRam-Services/static/media/bed_bug_control.d50f66ef51a70a4ec991.jpg",
+    "static/media/carpet_control.jpg": "/SaiRam-Services/static/media/carpet_control.b3349359a61c29045637.jpg",
+    "static/media/residential_pest_control.jpg": "/SaiRam-Services/static/media/residential_pest_control.46e0a1fee30a6797a8ba.jpg",
+    "index.html": "/SaiRam-Services/index.html",
+    "main.0e87671f.css.map": "/SaiRam-Services/static/css/main.0e87671f.css.map",
+    "main.592ac18f.js.map": "/SaiRam-Services/static/js/main.592ac18f.js.map",
+    "453.eca340d7.chunk.js.map": "/SaiRam-Services/static/js/453.eca340d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e87671f.css",
+    "static/js/main.592ac18f.js"
+  ]
+}
