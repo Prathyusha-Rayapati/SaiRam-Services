@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SaiRam-Services/static/css/main.0e87671f.css",
-    "main.js": "/SaiRam-Services/static/js/main.592ac18f.js",
+    "main.js": "/SaiRam-Services/static/js/main.d5c3086d.js",
     "static/js/453.eca340d7.chunk.js": "/SaiRam-Services/static/js/453.eca340d7.chunk.js",
     "static/media/commercial_pest_control.jpg": "/SaiRam-Services/static/media/commercial_pest_control.236cc6e5aab924fb6e15.jpg",
     "static/media/termite_control.jpg": "/SaiRam-Services/static/media/termite_control.7c8587390e774d899d4f.jpg",
@@ -13,11 +13,11 @@
     "static/media/residential_pest_control.jpg": "/SaiRam-Services/static/media/residential_pest_control.46e0a1fee30a6797a8ba.jpg",
     "index.html": "/SaiRam-Services/index.html",
     "main.0e87671f.css.map": "/SaiRam-Services/static/css/main.0e87671f.css.map",
-    "main.592ac18f.js.map": "/SaiRam-Services/static/js/main.592ac18f.js.map",
+    "main.d5c3086d.js.map": "/SaiRam-Services/static/js/main.d5c3086d.js.map",
     "453.eca340d7.chunk.js.map": "/SaiRam-Services/static/js/453.eca340d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e87671f.css",
-    "static/js/main.592ac18f.js"
+    "static/js/main.d5c3086d.js"
   ]
 }
