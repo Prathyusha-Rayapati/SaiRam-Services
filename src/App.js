@@ -7,9 +7,9 @@ import AboutUs from './components/AboutUs';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/SaiRam-Services">
       <div>
-        <Navbar /> {/* Use the Navbar component here */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
