@@ -74,7 +74,7 @@ function ContactUs() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="hno">House Number</label>
+          <label htmlFor="hno">Phone Number</label>
           <input
             type="text"
             id="hno"
