@@ -1,0 +1,83 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+.navbar {
+    background-color: #4e54c8; /* Purple background color */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem; /* Increased font size */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    width: 100%;
+  }
+  
+  .logo-link {
+    color: #f39c12; /* Orange color for "Pesticide Services" */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem; /* Larger font size */
+    font-weight: bold;
+    display: flex;
+    align-items: left; /* Align vertically center */
+    animation: fadeInLeft 1s ease-in-out; /* Animation effect */
+   font-family: 'Playwrite AU NSW', cursive;
+    
+  }
+  
+  
+  .nav-menu {
+    display: flex;
+    align-items: right;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    height: 80px;
+    text-align: right;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1.5rem; /* Increased padding for links */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f39c12; /* Highlight color on hover */
+  }
+  
+  .active {
+    color: #f39c12; /* Active link color */
+  }
+  
+  /* Keyframes animation */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
