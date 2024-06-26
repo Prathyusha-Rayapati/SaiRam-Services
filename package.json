@@ -2,7 +2,7 @@
   "name": "pesticide_services_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Prathyusha-Rayapati.github.io/SaiRam-Services",
+  "homepage": "https://prathyusha-rayapati.github.io/SaiRam-Services",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

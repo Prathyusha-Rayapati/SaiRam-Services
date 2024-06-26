@@ -1,83 +1,200 @@
 /* Navbar.css */
+
+/* Importing custom font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styles */
 .navbar {
-    background-color: #4e54c8; /* Purple background color */
-    height: 80px;
-    display: flex;
+  background-color: #4e54c8; /* Purple background color */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem; /* Increased font size */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1200px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.logo-link {
+  color: #f39c12; /* Orange color for "Pesticide Services" */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.3rem; /* Larger font size */
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align vertically center */
+  animation: fadeInLeft 1s ease-in-out; /* Animation effect */
+  font-family: 'Playwrite AU NSW', cursive; /* Applying custom font */
+}
+
+.menu-toggle {
+  position: absolute; /* Positioning in top right corner */
+ 
+  right: 24px; /* Adjust right position */
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+}
+
+.menu-toggle.active .bar {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 80px;
+  text-align: right;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 1.5rem; /* Increased padding for links */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.active {
+  color: #f39c12; /* Active link color */
+}
+
+/* Keyframes animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex; /* Show the menu toggle button on smaller screens */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem; /* Increased font size */
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+    height: 30px;
+    margin-right: 24px; /* Adjust margin for spacing */
   }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    width: 100%;
+
+  .menu-toggle.active .bar {
+    transform: rotate(-45deg) translate(-5px, 6px);
   }
-  
-  .logo-link {
-    color: #f39c12; /* Orange color for "Pesticide Services" */
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.3rem; /* Larger font size */
-    font-weight: bold;
-    display: flex;
-    align-items: left; /* Align vertically center */
-    animation: fadeInLeft 1s ease-in-out; /* Animation effect */
-   font-family: 'Playwrite AU NSW', cursive;
-    
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
   }
-  
-  
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
   .nav-menu {
-    display: flex;
-    align-items: right;
-    list-style: none;
-    text-align: right;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #4e54c8;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    z-index: 998;
   }
-  
+
+  .nav-menu.active {
+    transform: scaleY(1);
+  }
+
   .nav-item {
-    height: 80px;
-    text-align: right;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
   }
-  
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
   .nav-link {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0 1.5rem; /* Increased padding for links */
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
+    font-size: 1rem; /* Decreased font size for smaller screens */
   }
-  
-  .nav-link:hover {
-    color: #f39c12; /* Highlight color on hover */
+
+  .logo-link {
+    font-size: 1rem; /* Adjusted font size for logo link on smaller screens */
   }
-  
-  .active {
-    color: #f39c12; /* Active link color */
-  }
-  
-  /* Keyframes animation */
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
+}

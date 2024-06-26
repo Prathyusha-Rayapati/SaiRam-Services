@@ -13,10 +13,9 @@ function Home() {
         <h1>Call Today for a Free Estimate</h1>
         <h1>(251) 376 8090</h1>
       </div>
-      <div>
+      <div className="person-image-container">
         <img src={personImage} alt="Person performing pest control" className="person-image" />
       </div>
-      
     </div>
   );
 }

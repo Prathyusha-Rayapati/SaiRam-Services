@@ -48,7 +48,7 @@ function ContactUs() {
       <div className="contact-info">
       <p><FaPhone /> Phone: (251) 376-8090</p>
         <p><FaEnvelope /> Email: info@pesticideservices.com</p>
-        <p><FaMapMarkerAlt /> Address: 123 Pesticide Lane, MOBILE, AL 36608</p>
+        <p><FaMapMarkerAlt /> Address: MOBILE, AL 36608</p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
